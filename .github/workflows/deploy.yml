@@ -75,9 +75,8 @@ jobs:
                       # C) Pull latest code, build Docker image, and run it
                       # ---------------------------------------------------
                       rm -rf react-app
-                      mkdir react-app
+                      git clone https://github.com/NikitaSalunkhe11/frontend_deploy_Task_Manager.git ~/react-app
                       cd ~/react-app
-                      git clone https://github.com/NikitaSalunkhe11/frontend_deploy_Task_Manager.git .
                       git fetch origin main
                       git reset --hard origin/main
 
